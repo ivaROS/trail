@@ -168,15 +168,18 @@ class DrlInference:
 
                 # velocities:
                 # vx_min = 0
-                # if(min_scan_dist >= 2.2): # free space margin
-                #     vx_max = 2
-                # else:
-                #     vx_max = 0.5
-                vx_min = -1
-                vx_max = 1
+                # if (min_scan_dist >= 1.0): # free space margin
+                vx_min = -1.0
+                vx_max = 1.0
 
-                vz_min = -1
-                vz_max = 1
+                vz_min = -1.0
+                vz_max = 0.5
+                # else:
+                #     vx_min = -0.25
+                #     vx_max = 0.25
+
+                #     vz_min = -0.5
+                #     vz_max = 0.25
 
 
                 # vz_min = -0.7
